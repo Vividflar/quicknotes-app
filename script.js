@@ -114,6 +114,8 @@ function deleteNote(id) {
   render();
 }
 
+
+
 // ---------- Add a note ----------
 form.addEventListener("submit", (event) => {
   event.preventDefault();
