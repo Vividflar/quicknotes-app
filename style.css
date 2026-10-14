@@ -182,6 +182,15 @@ button:hover {
   background-color: #962d22;
 }
  
+#clear-all {
+  margin-bottom: 16px;
+  background-color: #c0392b;
+}
+ 
+#clear-all:hover {
+  background-color: #962d22;
+}
+ 
 .empty-message {
   padding: 12px 0;
   color: #555;

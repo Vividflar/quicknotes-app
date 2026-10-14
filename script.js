@@ -113,9 +113,19 @@ function deleteNote(id) {
   saveNotes();
   render();
 }
-
-
-
+ 
+// ---------- Clear all (bonus) ----------
+clearAllBtn.addEventListener("click", () => {
+  if (notes.length === 0) {
+    return;
+  }
+  if (confirm("Delete all notes?")) {
+    notes = [];
+    saveNotes();
+    render();
+  }
+});
+ 
 // ---------- Add a note ----------
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -143,3 +153,4 @@ form.addEventListener("submit", (event) => {
 });
  
 render();
+ 
